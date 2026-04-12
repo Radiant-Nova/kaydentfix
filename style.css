@@ -177,7 +177,7 @@ span {
 }
 
 .dental2 img {
-    object-position: center
+    object-position: 70% 0;
 }
 
 .dental3 img {
@@ -185,7 +185,8 @@ span {
 }
 
 .dental4 img {
-    object-position: 45% 0;
+    object-position: 50% 0;
+    zoom: 1.5;
 }
 
 /* About Section Styles */
