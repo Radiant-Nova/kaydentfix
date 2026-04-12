@@ -90,6 +90,7 @@ span {
     color: var(--bg-color);
     cursor: pointer;
     display: none;
+    color: #423b3b;
 }
 
 /* Home Section Styles */
@@ -237,8 +238,17 @@ span {
     transition: 0.3s ease;
 }
 
-.map-container {
+.maps-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
     margin-top: 2.5rem;
+}
+
+.map-container {
     width: 13rem;
     /* Or an appropriate width for a mini-map circle */
     aspect-ratio: 1 / 1;
@@ -251,6 +261,22 @@ span {
 .map-container iframe {
     width: 100%;
     height: 100%;
+}
+
+.ruteA img,
+.ruteB img {
+    width: 13rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--text-color);
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.ruteA img:hover,
+.ruteB img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Layanan Section Styles */
@@ -345,4 +371,346 @@ span {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-color);
+}
+
+/* Galeri dan Testimoni Section Styles */
+.galeri {
+    padding: 10rem 9% 2rem;
+}
+
+.galeri-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.galeri-box {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.galeri-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.galeri-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimoni-box {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.testimoni-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimoni-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Hubungi Kami Section Styles */
+.hubungikami-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 300px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.info-box i {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-top: 0.3rem;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: var(--bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.contact-form .btn {
+    text-align: center;
+}
+
+.contact-form a.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background: var(--main-color);
+    font-size: 1rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.contact-form a.btn:hover {
+    background-color: var(--text-color);
+}
+
+.catatan {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff3cd;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.catatan i {
+    font-size: 1.5rem;
+}
+
+.catatan p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: inherit;
+}
+
+/* Footer Section Styles */
+.footer {
+    padding: 2rem 5%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-text p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.footer-iconTop a {
+    position: fixed;
+    bottom: 2rem;
+    right: 2.1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    z-index: 1000;
+}
+
+.footer-iconTop a.show {
+    opacity: 0.7;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.footer-iconTop a:hover {
+    opacity: 1;
+    transform: scale(1.2) translateY(-5px);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+}
+
+/* ========================================= */
+/* Responsive Design Media Queries */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 85%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    section {
+        padding: 12rem 5% 2rem;
+        /* Diperbesar agar teks tidak tertutup navbar */
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        /* Meletakkan gambar di atas teks pada versi mobile */
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .home-content h1,
+    .about-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content p,
+    .about-content p {
+        text-align: center;
+    }
+
+    .about-content .btn {
+        text-align: center;
+    }
+
+    .maps-group {
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .hubungikami-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+        /* Diperbesar agar tulisan tidak terlalu kecil */
+    }
+
+    .home-img {
+        grid-template-columns: repeat(4, 1fr);
+        /* Dikembalikan menjadi 4 agar berjejer semua */
+        gap: 0.5rem;
+        /* Sedikit dirapatkan agar muat */
+    }
+
+    .maps-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container,
+    .ruteA img,
+    .ruteB img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
 }
